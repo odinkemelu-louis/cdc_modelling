@@ -1,0 +1,233 @@
+[0m22:04:45.698507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001912FB8D2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001912FB8F310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001912FB8FBD0>]}
+
+
+============================== 22:04:45.758139 | 8084f776-fcdc-44dd-abb3-3e9c47cacd61 ==============================
+[0m22:04:45.758139 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:04:45.760148 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\izuch\\.dbt', 'invocation_command': 'dbt init', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m22:05:36.238386 [debug] [MainThread]: Starter project path: C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\include\starter_project
+[0m22:05:36.289510 [info ] [MainThread]: Setting up your profile.
+[0m22:06:06.920591 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m22:06:06.921709 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m22:06:06.923493 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m22:09:19.880198 [info ] [MainThread]: Profile marketing written to C:\Users\izuch\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m22:09:19.933499 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m22:09:19.938011 [info ] [MainThread]: dbt version: 1.12.3
+[0m22:09:19.941525 [info ] [MainThread]: python version: 3.11.5
+[0m22:09:19.948049 [info ] [MainThread]: python path: C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Scripts\python.exe
+[0m22:09:19.949147 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m22:09:20.116994 [info ] [MainThread]: Using profiles dir at C:\Users\izuch\.dbt
+[0m22:09:20.118326 [info ] [MainThread]: Using profiles.yml file at C:\Users\izuch\.dbt\profiles.yml
+[0m22:09:20.119642 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\marketing\dbt_project.yml
+[0m22:09:20.120648 [info ] [MainThread]: adapter type: databricks
+[0m22:09:20.120648 [info ] [MainThread]: adapter version: 1.12.5
+[0m22:09:20.272672 [info ] [MainThread]: Configuration:
+[0m22:09:20.273677 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:09:20.273677 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:09:20.274677 [info ] [MainThread]: Required dependencies:
+[0m22:09:20.277184 [debug] [MainThread]: Executing "git --help"
+[0m22:09:20.361408 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:09:20.362363 [debug] [MainThread]: STDERR: "b''"
+[0m22:09:20.362363 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:09:20.363456 [info ] [MainThread]: Connection:
+[0m22:09:20.364692 [info ] [MainThread]:   host: www.databricks.com
+[0m22:09:20.364692 [info ] [MainThread]:   http_path: www.databricks.com
+[0m22:09:20.366557 [info ] [MainThread]:   catalog: hive_metastore
+[0m22:09:20.366557 [info ] [MainThread]:   schema: default
+[0m22:09:20.368022 [info ] [MainThread]: Registered adapter: databricks=1.12.5
+[0m22:09:21.214714 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m22:09:21.216225 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m22:09:25.634380 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://www.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: 404 Client Error: Not Found for url: https://www.databricks.com/.well-known/databricks-config). Proceeding as a non-SPOG host. If www.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m22:09:25.640788 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m22:09:25.641783 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m22:09:25.641783 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m22:09:25.643262 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m22:09:25.644404 [debug] [MainThread]: Using databricks connection "debug"
+[0m22:09:25.644404 [debug] [MainThread]: On debug: select 1 as id
+[0m22:09:25.645794 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:23:28.164384 [error] [MainThread]: databricks-sql-connector adapter: ThriftBackend.attempt_request: Exception: Retry request would exceed Retry policy max retry duration of 900.0 seconds
+[0m22:23:28.511661 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server. Retry request would exceed Retry policy max retry duration of 900.0 seconds
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=841.4098303318024/900.0, error-message=, http-code=None, method=OpenSession, no-retry-reason=non-retryable error, original-exception=Retry request would exceed Retry policy max retry duration of 900.0 seconds, query-id=None, session-id=None
+[0m22:23:28.523259 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server. Retry request would exceed Retry policy max retry duration of 900.0 seconds
+[0m22:23:28.546801 [debug] [MainThread]: On debug: No close available on handle
+[0m22:23:28.560077 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:23:28.562600 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:23:28.564136 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server. Retry request would exceed Retry policy max retry duration of 900.0 seconds
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:23:28.571268 [info ] [MainThread]: Your new dbt project "marketing" was created!
+Initialized new project in C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\marketing\marketing
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:23:28.575269 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m22:23:28.635006 [debug] [MainThread]: Command `dbt init` succeeded at 22:23:28.626494 after 1123.32 seconds
+[0m22:23:28.658586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001912FB8D690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001912FB8FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001912FB8EAD0>]}
+[0m22:23:28.669195 [debug] [MainThread]: Flushing usage events
+[0m22:23:30.061498 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:28:49.169346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E19721B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E197218390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1972E4D50>]}
+
+
+============================== 22:28:49.175159 | 9892affc-9778-46ed-beab-4a2d2bd57565 ==============================
+[0m22:28:49.175159 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:28:49.175159 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\izuch\\Desktop\\project\\CDE_bootcamp\\DBT\\cdc_modelling', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m22:28:49.216857 [info ] [MainThread]: dbt version: 1.12.3
+[0m22:28:49.218020 [info ] [MainThread]: python version: 3.11.5
+[0m22:28:49.219084 [info ] [MainThread]: python path: C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Scripts\python.exe
+[0m22:28:49.219084 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m22:28:49.220180 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 4
+  ------------------------------
+  1  | marketing:
+  2  | target: "{{ env_var('DBT_TARGET', 'dev') }}"
+  3  |   
+  4  |   meta:
+  5  |     base: &base
+  6  |       type: databricks
+  7  |       threads: 8
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 1, column 1
+  did not find expected key
+    in "<unicode string>", line 4, column 3
+[0m22:28:49.221333 [debug] [MainThread]: Command `dbt debug` failed at 22:28:49.221333 after 0.11 seconds
+[0m22:28:49.222331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1972E4B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E19737B690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E195AEDDD0>]}
+[0m22:28:49.222331 [debug] [MainThread]: Flushing usage events
+[0m22:28:50.142451 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:32:24.108785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EDF986D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EE066550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EDF980D0>]}
+
+
+============================== 22:32:24.114063 | ac859fa6-b66f-47cc-9c43-3a1f4d8f058c ==============================
+[0m22:32:24.114063 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:32:24.115562 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\izuch\\Desktop\\project\\CDE_bootcamp\\DBT\\cdc_modelling', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m22:32:24.115562 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:32:24.117077 [debug] [MainThread]: Command `dbt run` failed at 22:32:24.117077 after 0.06 seconds
+[0m22:32:24.118011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EE0EBA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EE05F410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EE05EF90>]}
+[0m22:32:24.118011 [debug] [MainThread]: Flushing usage events
+[0m22:32:24.959613 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:33:56.367113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001493A737610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001493A7443D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001493A746F90>]}
+
+
+============================== 22:33:56.370113 | 4cdb1b41-9278-44a3-b887-00275ef1c012 ==============================
+[0m22:33:56.370113 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:33:56.371113 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\izuch\\Desktop\\project\\CDE_bootcamp\\DBT\\cdc_modelling', 'invocation_command': 'dbt seed', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m22:33:56.372589 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:33:56.373097 [debug] [MainThread]: Command `dbt seed` failed at 22:33:56.373097 after 0.04 seconds
+[0m22:33:56.374106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001493A793210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001493A72F510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001493A72F050>]}
+[0m22:33:56.374106 [debug] [MainThread]: Flushing usage events
+[0m22:33:57.186816 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:06.053293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016737D05590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016737D07850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016737C3B250>]}
+
+
+============================== 22:42:06.061511 | 2e1659ee-855f-4c56-943b-853187180770 ==============================
+[0m22:42:06.061511 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:42:06.062974 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\izuch\\Desktop\\project\\CDE_bootcamp\\DBT\\cdc_modelling', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m22:42:20.725115 [debug] [MainThread]: Starter project path: C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\include\starter_project
+[0m22:42:20.804877 [info ] [MainThread]: Setting up your profile.
+[0m22:42:20.805885 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+while parsing a block mapping
+  in "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\profiles.yml", line 1, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\profiles.yml", line 4, column 3
+[0m22:42:20.877116 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\cli\main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\task\init.py", line 363, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\task\init.py", line 251, in setup_profile
+    if not self.check_if_can_write_profile(profile_name=profile_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\dbt\task\init.py", line 212, in check_if_can_write_profile
+    profiles = yaml.safe_load(f) or {}
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\.venv\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\profiles.yml", line 1, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\profiles.yml", line 4, column 3
+
+[0m22:42:20.879547 [debug] [MainThread]: Command `dbt init` failed at 22:42:20.879547 after 14.87 seconds
+[0m22:42:20.879547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016737CFF450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016737CFF0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016737CFF310>]}
+[0m22:42:20.880546 [debug] [MainThread]: Flushing usage events
+[0m22:42:21.777080 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:40:03.386294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023338DE4390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023338D0B6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023338DE5A50>]}
+
+
+============================== 23:40:03.392010 | 4b608133-ca75-4289-a650-d1b822a996e7 ==============================
+[0m23:40:03.392010 [info ] [MainThread]: Running with dbt=1.12.3
+[0m23:40:03.392010 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\izuch\\Desktop\\project\\CDE_bootcamp\\DBT\\cdc_modelling', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m23:40:03.392010 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\izuch\Desktop\project\CDE_bootcamp\DBT\cdc_modelling\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:40:03.392010 [debug] [MainThread]: Command `dbt run` failed at 23:40:03.392010 after 0.05 seconds
+[0m23:40:03.396469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023338DD4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023338DCFC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023338DCF450>]}
+[0m23:40:03.396469 [debug] [MainThread]: Flushing usage events
+[0m23:40:04.290825 [debug] [MainThread]: An error was encountered while trying to flush usage events
